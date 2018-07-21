@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -142,6 +142,32 @@
 <libraries>
 <library name="CasaLibrary">
 <packages>
+<package name="SO08">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt;</description>
+<wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
+<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
+<wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
+<circle x="-1.8034" y="-0.9906" radius="0.3556" width="0.0508" layer="21"/>
+<smd name="1" x="-1.905" y="-2.9337" dx="0.5" dy="1.25" layer="1"/>
+<smd name="8" x="-1.905" y="2.9337" dx="0.5" dy="1.25" layer="1"/>
+<smd name="2" x="-0.635" y="-2.9337" dx="0.5" dy="1.25" layer="1"/>
+<smd name="3" x="0.635" y="-2.9337" dx="0.5" dy="1.25" layer="1"/>
+<smd name="7" x="-0.635" y="2.9337" dx="0.5" dy="1.25" layer="1"/>
+<smd name="6" x="0.635" y="2.9337" dx="0.5" dy="1.25" layer="1"/>
+<smd name="4" x="1.905" y="-2.9337" dx="0.5" dy="1.25" layer="1"/>
+<smd name="5" x="1.905" y="2.9337" dx="0.5" dy="1.25" layer="1"/>
+<text x="-2.667" y="-1.778" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.9845" y="0.508" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-2.0828" y1="-2.8702" x2="-1.7272" y2="-1.8542" layer="51"/>
+<rectangle x1="-0.8128" y1="-2.8702" x2="-0.4572" y2="-1.8542" layer="51"/>
+<rectangle x1="0.4572" y1="-2.8702" x2="0.8128" y2="-1.8542" layer="51"/>
+<rectangle x1="1.7272" y1="-2.8702" x2="2.0828" y2="-1.8542" layer="51"/>
+<rectangle x1="-2.0828" y1="1.8542" x2="-1.7272" y2="2.8702" layer="51"/>
+<rectangle x1="-0.8128" y1="1.8542" x2="-0.4572" y2="2.8702" layer="51"/>
+<rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
+<rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
+</package>
 <package name="D-PAK_TO252AA">
 <description>&lt;b&gt;D-Pak (TO-252AA) Package&lt;/b&gt;&lt;p&gt;
 Source: http://www.irf.com/product-info/datasheets/data/irfr5305pbf.pdf</description>
@@ -200,8 +226,58 @@ Source: INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <rectangle x1="1.8288" y1="-6.731" x2="3.2512" y2="-4.2418" layer="21"/>
 <rectangle x1="-0.7112" y1="-6.731" x2="0.7112" y2="-4.2418" layer="21"/>
 </package>
+<package name="0603">
+<smd name="1" x="-0.65" y="0" dx="0.45" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.45" dy="0.9" layer="1"/>
+<text x="-0.889" y="0.6985" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.4445" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-0.3" y1="0.4" x2="0.3" y2="0.4" width="0.1" layer="21"/>
+<wire x1="-0.3" y1="-0.4" x2="0.3" y2="-0.4" width="0.1" layer="21"/>
+</package>
+<package name="R0805">
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.5388625" y="-0.167778125" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="R1206">
+<wire x1="-0.80625" y1="0.787" x2="0.80625" y2="0.787" width="0.1524" layer="21"/>
+<wire x1="-0.80625" y1="-0.787" x2="0.80625" y2="-0.787" width="0.1524" layer="21"/>
+<smd name="1" x="-1.4" y="0" dx="0.8" dy="1.6" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="0.8" dy="1.6" layer="1"/>
+<text x="-1.27" y="1.143" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.92075" y="-0.254" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="R2512">
+<wire x1="1.27" y1="-3.175" x2="5.23875" y2="-3.175" width="0.127" layer="21"/>
+<wire x1="5.23875" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
+<smd name="P$1" x="0.3175" y="-1.5875" dx="3" dy="1" layer="1" rot="R90"/>
+<smd name="P$2" x="6.19125" y="-1.5875" dx="3" dy="1" layer="1" rot="R90"/>
+</package>
+<package name="R0402">
+<wire x1="-0.3" y1="0.2825" x2="0.3" y2="0.2825" width="0.0508" layer="21"/>
+<wire x1="-0.3" y1="-0.2825" x2="0.3" y2="-0.2825" width="0.0508" layer="21"/>
+<smd name="1" x="-0.503125" y="0" dx="0.3" dy="0.5" layer="1"/>
+<smd name="2" x="0.503125" y="0" dx="0.3" dy="0.5" layer="1"/>
+</package>
 </packages>
 <symbols>
+<symbol name="TPS92020">
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<pin name="SS" x="-10.16" y="-2.54" length="short"/>
+<pin name="RT" x="-10.16" y="0" length="short"/>
+<pin name="DT" x="-10.16" y="2.54" length="short"/>
+<pin name="OC" x="-10.16" y="5.08" length="short"/>
+<pin name="GND" x="-10.16" y="-7.62" length="short"/>
+<pin name="VCC" x="-10.16" y="10.16" length="short"/>
+<pin name="GD1" x="10.16" y="7.62" length="short" rot="R180"/>
+<pin name="GD2" x="10.16" y="-3.81" length="short" rot="R180"/>
+</symbol>
 <symbol name="MOSFET-NCHANNEL">
 <wire x1="-3.6576" y1="2.413" x2="-3.6576" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="1.905" x2="-2.0066" y2="1.905" width="0.1524" layer="94"/>
@@ -242,8 +318,40 @@ Source: INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 <pin name="D" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="S" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="R">
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<text x="-2.54" y="-0.762" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<text x="-2.54" y="1.016" size="1.27" layer="104">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="TPS92020">
+<gates>
+<gate name="G$1" symbol="TPS92020" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="DT" pad="1"/>
+<connect gate="G$1" pin="GD1" pad="8"/>
+<connect gate="G$1" pin="GD2" pad="5"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="OC" pad="3"/>
+<connect gate="G$1" pin="RT" pad="2"/>
+<connect gate="G$1" pin="SS" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="IRFR024N">
 <gates>
 <gate name="G$1" symbol="MOSFET-NCHANNEL" x="0" y="0"/>
@@ -271,6 +379,58 @@ Source: INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="R" prefix="R" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805" package="R0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1206" package="R1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2512" package="R2512">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0402" package="R0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -283,27 +443,80 @@ Source: INTERNATIONAL RECTIFIER, irg4bc15ud-s.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="CasaLibrary" deviceset="IRFR024N" device=""/>
-<part name="U$2" library="CasaLibrary" deviceset="IRFR024N" device=""/>
+<part name="U$1" library="CasaLibrary" deviceset="TPS92020" device=""/>
+<part name="U$2" library="CasaLibrary" deviceset="IRFR024N" device="D2"/>
+<part name="U$3" library="CasaLibrary" deviceset="IRFR024N" device="D2"/>
+<part name="R1" library="CasaLibrary" deviceset="R" device="0805" value="50"/>
+<part name="R2" library="CasaLibrary" deviceset="R" device="0805" value="50"/>
+<part name="R3" library="CasaLibrary" deviceset="R" device="0805" value="10k"/>
+<part name="R4" library="CasaLibrary" deviceset="R" device="0805" value="10k"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="55.88" y="53.34"/>
-<instance part="U$2" gate="G$1" x="55.88" y="35.56"/>
+<instance part="U$1" gate="G$1" x="76.2" y="48.26"/>
+<instance part="U$2" gate="G$1" x="200.66" y="45.72"/>
+<instance part="U$3" gate="G$1" x="200.66" y="21.59"/>
+<instance part="R1" gate="G$1" x="186.69" y="43.18"/>
+<instance part="R2" gate="G$1" x="186.69" y="19.05"/>
+<instance part="R3" gate="G$1" x="193.04" y="36.83" rot="R90"/>
+<instance part="R4" gate="G$1" x="193.04" y="12.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="S"/>
-<pinref part="U$2" gate="G$1" pin="D"/>
-<wire x1="55.88" y1="40.64" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="S"/>
+<pinref part="U$3" gate="G$1" pin="D"/>
+<wire x1="200.66" y1="26.67" x2="200.66" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="30.48" x2="200.66" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="31.75" x2="193.04" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="30.48" x2="200.66" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="U$2" gate="G$1" pin="G"/>
+<wire x1="191.77" y1="43.18" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="194.31" y1="43.18" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="41.91" x2="193.04" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="U$3" gate="G$1" pin="G"/>
+<wire x1="191.77" y1="19.05" x2="194.31" y2="19.05" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="194.31" y1="19.05" x2="193.04" y2="19.05" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="19.05" x2="193.04" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="7.62" x2="193.04" y2="6.35" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="S"/>
+<wire x1="193.04" y1="6.35" x2="200.66" y2="6.35" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="6.35" x2="200.66" y2="16.51" width="0.1524" layer="91"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>

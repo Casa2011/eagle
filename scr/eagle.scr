@@ -7,11 +7,12 @@
 #
 
 BRD:
+GRID INCH 0.0125 2 lines on;
 MENU '[git.png] test : Run test.ulp;'\
 ;
 
 SCH:
-Grid Default;
+GRID INCH 0.05 2 lines on;
 Change Width 0.006in;
 MENU '[git.png] Search and order {\
                                           General : Run designlink-order.ulp -general; |\
