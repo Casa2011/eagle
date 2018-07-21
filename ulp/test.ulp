@@ -1,0 +1,27 @@
+//#usage "Generates cam files and runs camprep"
+//string shellCommands;
+//system("/home/user/eagle-7.7.0/bin/commit.sh");
+
+
+
+int hor = 1;
+int ver = 1;
+
+string commit;
+int Result = dlgDialog("Git on Eagle") {
+  dlgHBoxLayout {
+    dlgStretch(1);
+    dlgLabel("commit: ");
+    dlgStretch(1);
+    }
+  dlgHBoxLayout {
+    dlgLabel("commit");
+    dlgStringEdit(commit);
+    dlgPushButton("push")
+	{
+		system("/home/user/eagle-7.7.0/bin/commit.sh -commit");
+		exit("");
+	};
+  }
+  }; 
+
