@@ -1,0 +1,43 @@
+[Eagle]
+Version="07 07 00"
+Platform="Windows"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="D:/Documents/git/lib/eagle/GeekAmmo.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/LilyPad-Wearables.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-Aesthetics.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-AnalogIC.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-Boards.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-Capacitors.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-Connectors.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-DigitalIC.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-Displays.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-Electromechanical.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-FreqCtrl.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-LED.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-Passives.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-PowerIC.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-RF.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-Resistors.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-Retired.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/SparkFun-Sensors.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/User-Submitted.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/analog-devices.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/battery.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/buzzer.lbr"
+UsedLibrary="D:/Documents/git/lib/eagle/stm32.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="-8 -8 1271 738"
+State=1
+Number=0
+
+[Desktop]
+Screen="1280 800"
+Window="Win_1"

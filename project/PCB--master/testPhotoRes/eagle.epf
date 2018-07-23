@@ -1,0 +1,43 @@
+[Eagle]
+Version="07 06 00"
+Platform="Windows"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/GeekAmmo.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/LilyPad-Wearables.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-Aesthetics.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-AnalogIC.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-Boards.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-Capacitors.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-Connectors.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-DigitalIC.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-Displays.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-Electromechanical.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-FreqCtrl.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-LED.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-Passives.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-PowerIC.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-RF.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-Resistors.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-Retired.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/SparkFun-Sensors.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/User-Submitted.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/analog-devices.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/battery.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/buzzer.lbr"
+UsedLibrary="C:/Users/user/Documents/GitHub/lib/eagle/stm32.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="-8 -8 1271 738"
+State=1
+Number=0
+
+[Desktop]
+Screen="1280 800"
+Window="Win_1"

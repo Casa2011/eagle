@@ -1,0 +1,56 @@
+(c) Pierre ROUZEAU - 2007
+
+Carte de puissance pour moteurs pas à pas 
+à base de circuits L297/L298, 2 x 2A, 40V maxi
+Fonctionne en demi-pas
+Resistances de Shunt  3 x 1 ohm en //, soit 0.333 ohm
+Le courant est controlé par le potentiomètre R30,
+La tension mesurée sur JP2 est égale à la valeur du courant.
+C'est à régler SANS avoir les moteurs branchés.
+
+C'est une bonne idée de limiter le courant à 80-85%
+de la valeurs indiquée sur le moteur, le couple sera seulement réduit de 5%
+
+Cette carte comporte un générateur de tops à fréquence réglable.
+Pour brancher le générateur de top sur l'entrée clock de la carte, connecter le jumper JP4 (n'oubliez pas de le déconnecter quand vous brancherez l'ordinateur).
+
+Une alimentation à découpage produit le 5V sur la carte. Attention de ne pas brancher ensemble différentes sources 5V (sur différentes cartes) sous peine de misères. 
+
+JP1 contrôle la circulation du courant dans le pont L298.
+ce pontet définit le chemin de retour du courant dans le pont quand on avance d'un pas. ceci est appellé 'slow decay' et 'fast decay' ou encore 'enable chopping' et 'phase chopping' dans les feuilles de données des circuits de commande.
+Le contact entre ces broches doit être uniquement modifié carte hors-tension.
+La meilleure option est... celle qui fonctionne le mieux, ce qui dépends de vos moteurs.
+Aussi il faut tester avec vos propres moteurs.
+Le pontet en place définit le contrôle comme 'enable chopping' (qui met la broche 11 du circuit L297 à 0V) ce qui crée plus d'échauffement sur le pont L298, les résistances de shunt et les moteurs, mais permet un fonctionnement plus rapide des moteurs.
+Sans pontet le controle est en 'phase chopping' (qui met la broche 11 du circuit L297 à +5V) et crée moins d'échauffement.
+Il faut aussi voir le bruit généré par les moteurs.
+
+JP3 Contrôle le signal de synchronisation. 
+  La carte génère ses signaux quand les broches 1 et 2 sont pontées.
+  Elle se synchronise sur un signal extérieur quand les broches 2 et 3 sont pontées.
+
+Sur un ensemble de cartes, une seule doit générer la synchronisation, les autres 
+doivent être synchronisées sur la première (via le fil 'sync').
+
+Il est obligatoire d'alimenter les circuits en 5V *avant* ou
+en même temps que l'alimentation de puissance.
+Un oubli détruira le circuit L298. J'ai testé pour vous...
+
+L'alimentation de puissance n'a pas besoin d'être régulée, juste filtrée.
+
+La tension peut être jusqu'a 12 fois la tension indiquée sur le moteur,
+mais il est préférable de la limiter à 8-10 fois.
+Par exemple :
+Pour trois ou quatre moteurs 2x2A, 2.6 V, qui ont un couple de 6.4 kg.cm
+une bonne alimentation est un tranformateur 18V, avec un pont redresseur
+ et un condensateur 22 000 µF
+La tension en charge maxi au condensateur sera :
+18 x 1.41 - 1.4V = 24V, soit 9.2 fois la valeur du moteur.
+Et le courant sera limité à une valeur de 1.7 A, en réglant
+la tension à 1.7 V.
+
+Prenez garde au fait que la tension à vide d'un transformateur est sensiblement supérieure à sa tension nominale. La plupart du temps, vos moteurs seront utilisés loin de leur vitesse maximum et la consommation sera faible, ce qui rapprochera la tension du transformateur de sa tension à vide. Faites des mesures...
+
+Comme d'usage, libre de droits pour tout usage non commercial.
+Il n'y a a aucune espèce de garantie.
+The type de circuit *requiert* de l'expérience en électronique.
