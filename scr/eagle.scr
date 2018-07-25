@@ -14,7 +14,7 @@ Change Width 0.25mm;
 
 
 
-MENU 'Layers {\
+MENU '[./designlink.png] Layers   {\
             Top : display NONE top torigins tKeepout tRestrict borigins pads vias dimension unrouted tPlace tDocu; | \
             Bottom : display NONE bottom borigins bKeepout bRestrict torigins pads vias dimension unrouted  bPlace bDocu; | \
             All : display top bottom pads vias dimension unrouted tplace \
@@ -27,7 +27,7 @@ Unrouted : display NONE   pads vias dimension unrouted; | \
         }' \
         'State : run length-freq-ri;' \
         'RipPoly : ripup @;' \
-        'DRC : DRC;' \
+        'DRC  : DRC;' \
 'Print : SCRIPT print;' \
       #  'DrawOn {\
             Top : change layer top; | \
@@ -51,7 +51,7 @@ Unrouted : display NONE   pads vias dimension unrouted; | \
 SCH:
 GRID INCH 0.05 1 lines on;
 Change Width 0.006in;
-MENU '[git.png] Search and order {\
+MENU '[./icons/FileSave.svg] Search and order {\
                                           General : Run designlink-order.ulp -general; |\
                                           Schematic : Run designlink-order.ulp; \
                                           }'\
