@@ -1,0 +1,40 @@
+[Eagle]
+Version="07 07 00"
+Platform="Linux"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/home/kvaoar/eagle/lbr/CasaLibrary.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-Aesthetics.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-AnalogIC.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-Boards.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-Capacitors.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-Connectors.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-DigitalIC.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-DiscreteSemi.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-Displays.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-Electromechanical.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-FreqCtrl.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-LED.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-Passives.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-PowerIC.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-RF.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-Resistors.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-Retired.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/SparkFun-Sensors.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/pinhead-2.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/stm32.lbr"
+UsedLibrary="/home/kvaoar/eagle/lbr/stm8.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="2219 0 3134 399"
+State=1
+Number=0
+
+[Desktop]
+Screen="3840 1080"
+Window="Win_1"

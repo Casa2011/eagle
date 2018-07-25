@@ -7,14 +7,51 @@
 #
 
 BRD:
-GRID INCH 0.0125 2 lines on;
-MENU '[git.png] test : Run test.ulp;'\
-;
+GRID INCH 0.0125 1 lines on;
+Change Width 0.25mm;
+#MENU '[git.png] commit : Run test.ulp;'\
+#;
+
+
+
+MENU '[./designlink.png] Layers   {\
+            Top : display NONE top torigins tKeepout tRestrict borigins pads vias dimension unrouted tPlace tDocu; | \
+            Bottom : display NONE bottom borigins bKeepout bRestrict torigins pads vias dimension unrouted  bPlace bDocu; | \
+            All : display top bottom pads vias dimension unrouted tplace \
+                torigins tnames tvalues bnames bvalues tkeepout bplace borigins bkeepout; | \
+            NoNames : display -tnames -tvalues -bnames -bvalues; | \
+            noDocu : display -tdocu -bdocu; | \
+            AddDocu:  display tdocu bdocu; | \
+Unrouted : display NONE   pads vias dimension unrouted; | \
+            SilkScreen: display NONE tplace -tnames -tvalues -tdocu dimension top; \
+        }' \
+        'State : run length-freq-ri;' \
+        'RipPoly : ripup @;' \
+        'DRC  : DRC;' \
+'Print : SCRIPT print;' \
+      #  'DrawOn {\
+            Top : change layer top; | \
+            Bottom : change layer bottom; | \
+            tPlace : change layer tPlace; | \
+            Dim : change layer Dimension; | \
+            History: change layer History; \
+        }' \
+        'Grid {\
+          Toggle : run gridhalf 1 t ; info | \
+          Smaller : run gridhalf 0.5; move | \
+          Bigger : run gridhalf 2; move   | \
+          OnOff : grid; move \
+        }' \
+        'Circle : run circle;' \
+        'Count : run count;' \
+        'DrlAid : run drill-aid;' \
+        'RipPoly : ripup @;' \
+
 
 SCH:
-GRID INCH 0.05 2 lines on;
+GRID INCH 0.05 1 lines on;
 Change Width 0.006in;
-MENU '[git.png] Search and order {\
+MENU '[./icons/FileSave.svg] Search and order {\
                                           General : Run designlink-order.ulp -general; |\
                                           Schematic : Run designlink-order.ulp; \
                                           }'\
